@@ -5,7 +5,7 @@ let navbar = document.querySelector(".navbar");
 
 window.addEventListener("scroll", function () {
   let value = Math.round(this.window.scrollY);
-  text1.style.translate = value * 3.5 + "px";
+  text1.style.translate = value * 3.7 + "px";
   text2.style.translate = value * -2.7 + "px";
   text3.style.translate = value * 2.5 + "px";
   // myFunction();
