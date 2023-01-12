@@ -12,6 +12,11 @@
       href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&family=Cinzel+Decorative&family=Comfortaa:wght@400;600&family=Corinthia&family=Henny+Penny&family=Josefin+Sans:wght@300;400;500;700&family=Lato:wght@300;400;900&family=MedievalSharp&family=Mulish:wght@200;300;700&family=Orbitron:wght@500&family=Overlock+SC&family=Quicksand&family=Raleway:wght@500&family=Zilla+Slab:wght@500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script
+      src="https://kit.fontawesome.com/46097d5f82.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- navigation -->
@@ -30,8 +35,8 @@
     <section class="sec2">
       <div class="container">
         <div class="title-sec2">
-          <h1 class="sec2-h1">a.i is our friend!</h1>
-          <p>
+          <h1 class="sec2-h1" data-aos="fade-right">a.i is our friend!</h1>
+          <p data-aos="fade-right" data-aos-delay="200">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
             soluta voluptate perferendis ullam voluptatem facere. Similique
             ipsam, vel iste voluptatibus necessitatibus dolorum, vitae repellat,
@@ -40,25 +45,102 @@
             tenetur soluta deserunt tempora amet adipisci? Beatae rem adipisci
             accusantium obcaecati repellendus quod officia ea ducimus saepe!
           </p>
-          <button class="btn">Explore Us</button>
+          <button class="btn" data-aos="fade-up" data-aos-duration="700">
+            Explore Us
+          </button>
         </div>
-        <div class="img-sec2">
+        <div class="img-sec2" data-aos="zoom-in">
           <img src="images/robott-removebg-preview.png" alt="" />
         </div>
       </div>
     </section>
     <!-- end of section 2 -->
 
-    <section class="sec3">
-      <div class="img-sec3">
-        <img
-          src="images/mathew-schwartz-vZFJfIsEa0E-unsplash-removebg-preview (1).png"
-          alt=""
-        />
+    <!-- section 3 -->
+    <section class="sec3" id="sec3">
+      <div class="card-container">
+        <div class="card" data-aos="fade-left" data-aos-duration="1000">
+          <img src="images/kaki.jpg" alt="Card 1" />
+          <div class="pad">
+            <h2>Difference is not a barrier</h2>
+            <p>
+              <a href=""
+                >Buy now <i class="fa-solid fa-arrow-right-long"></i
+              ></a>
+            </p>
+          </div>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-duration="1000">
+          <img src="images/security.jpg" alt="Card 2" />
+          <div class="pad">
+            <h2>Make your house have a great little guard</h2>
+            <p>
+              <a href=""
+                >Buy now <i class="fa-solid fa-arrow-right-long"></i
+              ></a>
+            </p>
+          </div>
+        </div>
+        <div class="card" data-aos="fade-right" data-aos-duration="1000">
+          <img src="images/maskk.jpg" alt="Card 3" />
+          <div class="pad">
+            <h2>Now you don't have to bother cooking yourself</h2>
+            <p>
+              <a href=""
+                >Buy now <i class="fa-solid fa-arrow-right-long"></i
+              ></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of section 3 -->
+
+    <!-- section 4 -->
+    <section id="sec4">
+      <div class="header-sec4">
+        <div class="container-sec4">
+          <h1 data-aos="fade-right">Hascell</h1>
+          <h3 data-aos="fade-right">
+            A great new robot from Viar that can protect humanity from any
+            threat!
+          </h3>
+          <a href="">
+            <button data-aos="fade-up">More Information</button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- end of section 4 -->
+
+    <section id="sec5">
+      <div class="container-sec5">
+        <h1 data-aos="zoom-in">Join Our Company Now</h1>
+        <h4 data-aos="zoom-in" data-aos-delay="100">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
+          aspernatur deserunt.
+        </h4>
+        <form
+          action=""
+          data-aos="zoom-in"
+          data-aos-offset="50"
+          data-aos-delay="200"
+        >
+          <input type="text" name="" id="" placeholder="masukan nama" />
+          <a href="">
+            <button>Submit</button>
+          </a>
+        </form>
       </div>
     </section>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
     <script src="jQuery 3.6.1.min.js"></script>
   </body>
 </html>
