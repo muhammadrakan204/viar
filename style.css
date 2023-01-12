@@ -281,7 +281,7 @@ body::-webkit-scrollbar{
     text-align: center;
     font-family: 'Orbitron', sans-serif;
     margin-top: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-size: 3rem;
     letter-spacing: 3px;
 }
@@ -295,6 +295,7 @@ body::-webkit-scrollbar{
     color: #8E8E8E;
     width: 45%;
     padding: 20px;
+    margin-bottom: 10px;
 }
 
 form {
@@ -342,6 +343,70 @@ form a button:hover {
 form button a {
     text-decoration: none;
     color: black;
+}
+
+/* footer */
+footer {
+    margin-top: 30px;
+}
+
+.sosmed {
+    padding: 35px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-footer {
+    background-color: #191919;
+}
+
+.container-footer i {
+    color: white;
+    font-size: 20px;
+    margin-right: 13px;
+}
+
+.container-footer a {
+    text-decoration: none;
+}
+
+.container-footer .navbar {
+    display: flex;
+    justify-content: center;
+    color: #FFFDFD;
+}
+
+.container-footer .navbar .border {
+    border-right: 1px solid white;
+    padding-right: 10px;
+}
+
+.container-footer .navbar p {
+    margin-right: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.navbar a {
+    color: white;
+}
+
+.container-footer .img-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.container-footer img {
+    width: 100px;
+}
+
+.end p {
+    background-color: black;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 15px 5px;
+    text-align: center;
+    font-weight: 200;
+    font-size: 13px;
 }
 
 
