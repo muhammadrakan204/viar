@@ -426,6 +426,10 @@ footer {
 
 
 @media (max-width: 500px) {
+    body {
+        overflow-x: hidden;
+    }
+
     #header img {
         width: 370px;
         height: 490px;
