@@ -506,6 +506,10 @@ footer {
 
 
 @media (max-width: 768px) {
+    .sec2 img {
+        width: 300px;
+    }
+
     .header-sec4 {
         background-position: center right;
     }
