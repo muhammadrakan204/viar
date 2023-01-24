@@ -7,6 +7,7 @@
 body {
     -ms-overflow-style: none;
      scrollbar-width: none;
+     scroll-behavior: smooth;
 }
    
 body::-webkit-scrollbar{
@@ -16,7 +17,7 @@ body::-webkit-scrollbar{
 
 #header {
     width: 100%;
-    height: 120vh;
+    height: 700px;
     background-color: black;
     position: relative;
     overflow: hidden;
@@ -65,7 +66,7 @@ body::-webkit-scrollbar{
 .sec2 {
     margin-top: 50px;
     padding: 30px;
-    /* height: 100vh; */
+    height: 100%;
 }
 
 .sec2 .container {
@@ -74,7 +75,7 @@ body::-webkit-scrollbar{
 }
 
 .img-sec2 img {
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 .sec2 h1 {
@@ -86,6 +87,7 @@ body::-webkit-scrollbar{
 
 .sec2 .container .title-sec2 {
     width: 55%;
+    /* height: 300px; */
 }
 
 .sec2 p {
@@ -94,11 +96,17 @@ body::-webkit-scrollbar{
     line-height: 25px;
 }
 
+.container-btn {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -200px;
+}
 
-.sec2 .container .title-sec2 .btn {
+.sec2 .btn {
+    align-items: flex-start;
     padding: 10px 30px;
     font-size: 20px;
-    margin-top: 100px;
     letter-spacing: 2px;
     border-radius: 0;
     border: none;
@@ -107,6 +115,7 @@ body::-webkit-scrollbar{
     transition: 0.3s;
     z-index: 20;
     font-family: 'Orbitron', sans-serif;
+    transform: translateY(50%);
 }
 
 .sec2 .container .btn:hover {
@@ -119,7 +128,7 @@ body::-webkit-scrollbar{
 
 /* section 3 */
 .sec3 {
-    margin-top: 30px;
+    margin-top: 100px;
     padding: 40px 0px;
     width: 100%;
     background-color: #FAFAFF;
@@ -190,8 +199,6 @@ body::-webkit-scrollbar{
 #sec4 {
     height: 120vh;
     width: 100%;
-    background-image: url(images/robotsec4\(2\).jpg);
-    background-size: cover;
 }
 
 .header-sec4 {
@@ -215,12 +222,12 @@ body::-webkit-scrollbar{
 .container-sec4 {
     height: 100%;
     padding: 70px;
+    width: 100%;
 }
 
 .container-sec4 h1 {
     font-family: 'rakan';
     color: white;
-    font-size: 40px;
     z-index: 6;
     position: relative;
     margin-top: 3rem;
@@ -417,4 +424,152 @@ footer {
 }
 
 
+
+@media (max-width: 500px) {
+    #header img {
+        width: 370px;
+        height: 490px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        /* transform: translateX(10%); */
+        display: inline-block;
+        margin: 0;
+    }
+
+    .text-header p {
+        font-size: 4.5rem;
+    }
+
+    .text-header .text1 {
+        top: 20%;
+    }
+
+    .text-header .text2 {
+        top: 35%;
+    }
+
+    .text-header .text3 {
+        top: 50%;
+    }
+
+    .sec2 .container .title-sec2 {
+        margin-bottom: 100px;
+        height: 100%;
+    }
+
+    .title-sec2 h1 {
+        font-size: 3.2rem;
+    }
+
+    .title-sec2 p {
+        line-height: 30px;
+    }
+
+    .img-sec2 img {
+        margin-top: 30px;
+    }
+
+    .header-sec4 {
+        background-position: center right;
+    }
+    
+    .container-sec4 {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .container-sec4 h1 {
+        font-size: 5rem;
+    }
+
+    .container-sec5 h4 {
+        width: 100%;
+    }
+
+    .container-sec5 h1 {
+        font-size: 2rem;
+    }
+
+    form input {
+        width: 120px;
+    }
+
+    #sec5 {
+        padding: 10px 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .header-sec4 {
+        background-position: center right;
+    }
+
+    .container-sec4 {
+        padding: 20px;
+    }
+
+    .container-sec5 h4 {
+        width: 100%;
+    }
+
+    .sec2 .container {
+        flex-direction: column;
+    }
+
+    .sec2 .container .title-sec2 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .title-sec2 h1 {
+        font-size: 3.2rem;
+    }
+
+    .img-sec2 {
+        margin: auto;
+    }
+
+    .container-btn {
+        margin-top: 0;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 860px) {
+
+    .sec2 .container .title-sec2 {
+        width: 100%;
+    }
+    .sec2 .container {
+        flex-direction: column;
+    }
+    
+    .title-sec2 h1 {
+        font-size: 3.2rem;
+    }
+
+    .title-sec2 p {
+        line-height: 30px;
+    }
+
+    .img-sec2 img {
+        margin-top: 10px;
+    }
+
+    .title-sec2 {
+        text-align: center;
+    }
+
+    .img-sec2 {
+        margin: auto;
+    }
+
+    .container-btn {
+        margin-top: 0;
+        justify-content: center;
+        margin-bottom: -50px;
+    }
+}
 
