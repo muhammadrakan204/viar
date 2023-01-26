@@ -103,7 +103,7 @@ body::-webkit-scrollbar{
     margin-top: -200px;
 }
 
-.sec2 .btn {
+.sec2 .container-btn .btn {
     align-items: flex-start;
     padding: 10px 30px;
     font-size: 20px;
@@ -112,13 +112,12 @@ body::-webkit-scrollbar{
     border: none;
     background-color: black;
     color: white;
-    transition: 0.3s;
-    z-index: 20;
     font-family: 'Orbitron', sans-serif;
-    transform: translateY(50%);
+    /* transform: translateY(50%); */
 }
 
-.sec2 .container .btn:hover {
+.sec2 .container-btn .btn:hover {
+    transition: .3s;
     background-color: white;
     color: black;
     cursor: pointer;
