@@ -449,15 +449,18 @@ footer {
     }
 
     .text-header .text1 {
-        top: 20%;
+        top: 30%;
+        left: -10;
     }
 
     .text-header .text2 {
-        top: 35%;
+        top: 45%;
+        right: 0;
     }
 
     .text-header .text3 {
-        top: 50%;
+        top: 60%;
+        left: -10;
     }
 
     .sec2 .container .title-sec2 {

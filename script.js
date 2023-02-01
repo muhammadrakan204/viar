@@ -12,12 +12,13 @@ window.addEventListener("scroll", function () {
 
 // mobil version
 const mobile = window.matchMedia("(max-width: 558px)");
+const scrollMobile = document.documentElement.scrollTop > 50;
 
 if (mobile.matches) {
   window.addEventListener("scroll", function () {
     let value = Math.round(this.window.scrollY);
-    text1.style.translate = value * 4.7 + "px";
-    text2.style.translate = value * -4.7 + "px";
+    text1.style.translate = value * 5 + "px";
+    text2.style.translate = value * -5.7 + "px";
     text3.style.translate = value * 4.5 + "px";
   });
 }
