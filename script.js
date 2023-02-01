@@ -2,6 +2,9 @@ let text1 = document.querySelector(".text1");
 let text2 = document.querySelector(".text2");
 let text3 = document.querySelector(".text3");
 let navbar = document.querySelector(".navbar");
+const kartu1 = document.querySelector(".card1");
+const kartu2 = document.querySelector(".card2");
+const kartu3 = document.querySelector(".card3");
 
 window.addEventListener("scroll", function () {
   let value = Math.round(this.window.scrollY);
@@ -28,3 +31,18 @@ const myFunction = () => {
     navbar.style.color = black;
   }
 };
+
+// window.onscroll = function () {
+//   cardScroll();
+// };
+
+// const cardScroll = () => {
+//   if (document.documentElement.scrollTop > 950) {
+//     kartu1.classList.add("active");
+//     kartu2.classList.add("active");
+//     kartu3.classList.add("active");
+//   }
+//   if (mobile.matches && document.documentElement.scrollTop > 2700) {
+//     kartu1.classList.add("active");
+//   }
+// };
