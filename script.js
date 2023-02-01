@@ -8,8 +8,19 @@ window.addEventListener("scroll", function () {
   text1.style.translate = value * 3.7 + "px";
   text2.style.translate = value * -2.7 + "px";
   text3.style.translate = value * 2.5 + "px";
-  // myFunction();
 });
+
+// mobil version
+const mobile = window.matchMedia("(max-width: 558px)");
+
+if (mobile.matches) {
+  window.addEventListener("scroll", function () {
+    let value = Math.round(this.window.scrollY);
+    text1.style.translate = value * 4.7 + "px";
+    text2.style.translate = value * -4.7 + "px";
+    text3.style.translate = value * 4.5 + "px";
+  });
+}
 
 const myFunction = () => {
   if (document.documentElement.scrollTop > 338) {

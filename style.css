@@ -429,6 +429,10 @@ footer {
         overflow-x: hidden;
     }
 
+    #header {
+        overflow-x: hidden;
+    }
+
     #header img {
         width: 370px;
         height: 490px;
